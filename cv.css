@@ -1,0 +1,390 @@
+@media screen and (max-width: 9991px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-tap-highlight-color:transparent ;
+  }
+  body {
+    background-color: #131416;
+    color: #ffffff;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+  html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background-color: #131416;
+    border-bottom: double 1px #3e3f41;
+    padding: 15px 20px;
+    z-index: 999;
+  }
+  #headerLogo {
+    font-size: 2em;
+    cursor:  ;
+    color: #551a8b;
+    text-decoration: none;
+  }
+  #menuIcon {
+    position: absolute;
+    top: 40;
+    right: 40;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: linear-gradient(225deg, #141518, #111214);
+    box-shadow:  -6px 6px 12px #080809,
+                6px -6px 12px #1e2023;
+  }
+  #menuLinksContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 8% 2%;
+    visibility: hidden;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #131416;
+  }
+  #menuCloseIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: linear-gradient(225deg, #141518, #111214);
+    box-shadow:  -6px 6px 12px #080809,
+                6px -6px 12px #1e2023;
+    position: absolute;
+    top: 25;
+    right: 30;
+  }
+  #menuCloseIcon:hover, #menuIcon:hover {
+    box-shadow: none;
+  }
+  #headerMenuLinksDiv a {
+    color: #551a8b;
+    text-decoration: none;
+    padding: 20px 50px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #141518, #111214);
+    box-shadow:  5px 5px 10px #080809,
+             -5px -5px 10px #1e2023;
+  }
+  #headerMenuLinksDiv a:hover {
+    border-radius: 10px;
+    background: #131416;
+    box-shadow: inset 5px 5px 10px #080809,
+                inset -5px -5px 10px #1e2023;
+  }
+  /*Header Styling Ends Here */
+  #home {
+    background-image: url("https://i.ibb.co/bXKhwzn/home-background-image.jpg");
+    background-attachment: scroll;
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 120px 0 0 0;
+  }
+  #homeTextContainer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  #homeTextContainerFirstP {
+    font-size: 1.5em;
+    padding-bottom: 10px;
+  }
+  #homeTextContainerFirstH1 {
+    font-size: 3em;
+    cursor:  ;
+    color: #660db9;
+    text-decoration: none;
+    letter-spacing: 3px;
+  }
+  #homeSilkksContainer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  #homeSilkksContainerSkillTitle {
+    background-color: rgba(225, 225,225, 0.1);
+    padding:5px 10px;
+    border-radius: 25px;
+    font-size: 0.9em;
+    margin: 0 5px 0 0;
+  }
+  #homeScrollTextButtonAndIconsContainer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    bottom: 10;
+    padding: 0 20px;
+  }
+  #homeScrollTextButtonAndIconsContainerScrollButton {
+    color: #ffffff;
+    font-size: 1.1em;
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-decoration: none;
+  }
+  #homeScrollTextButtonAndIconsContainerIcon img {
+    width: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 5px 0 0;
+    background-color: rgba(225, 225,225, 1);
+  }
+  /* Home Styling Ends Here */
+  #aboutMe {
+    padding: 100px 10%;
+  }
+  #aboutMePictureContainer {
+    width: 100%;
+    border: solid 10px #232323;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow:  -10px -10px 10px #0e0e0e,
+             10px 10px 10px #383838;
+  }
+  #aboutMePictureContainer:hover {
+    background: #232323;
+    box-shadow: inset 35px 35px 36px #0e0e0e,
+                inset -35px -35px 36px #383838;
+  }
+  #aboutMePictureContainerPicture {
+    width: 100%;
+    filter:  brightness(0.8) saturate(2);
+  }
+  #aboutMeTextContainer {
+    padding: 50px 0 20px 0;
+  }
+  #aboutMeSecondP {
+    color: #70757f;
+    padding: 10px 0;
+  }
+  #aboutMeDetailsContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  #aboutMeDetailsContainerItem {
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    padding: 10px 0;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #141518, #111214);
+    box-shadow:  8px 8px 16px #080809,
+             -8px -8px 16px #1e2023;
+    cursor:  ;
+  }
+ 
+  
+  #aboutMeDetailsContainerItem:hover {
+    border-radius: 15px;
+    background: #131416;
+    box-shadow: inset 8px 8px 16px #080809,
+            inset -8px -8px 16px #1e2023;
+  }
+  #aboutMeDetailsContainerItemNoBold {
+    font-size: 0.9em;
+    color: #70757f;
+  }
+  
+  a.download-button {
+    padding: 20px 50px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 1em;
+    background: #5f09af;
+    color: #ffffff;
+    cursor:  ;
+  }
+  a.download-button:hover {
+    background: #5f09af6b;
+    transition: 1s;
+  }
+  #services {
+    background-color: #1c1d24;
+    padding: 80px 10%;
+  }
+  #servicesFirstTextContainer {
+    text-align: center;
+  }
+  #servicesFirstTextContainerFirstH1 {
+    font-size: 3em;
+    cursor:  ;
+    color: #551a8b;
+    text-decoration: none;
+    padding: 20px 0;
+  }
+  #servicesFirstTextContainerFirstP {
+    font-size: 1.1em;
+    color: #70757f;
+    margin-bottom: 50px;
+  }
+  #servicesSecondContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+  }
+  #servicesSecondContainerItem {
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #141518, #111214);
+    box-shadow:  8px 8px 16px #080809,
+             -8px -8px 16px #1e2023;
+    cursor:  ;
+    width: 100%;
+  }
+  #servicesSecondContainerItem:hover {
+    background: #131416;
+    box-shadow: inset 8px 8px 16px #080809,
+            inset -8px -8px 16px #1e2023;
+  }
+  #servicesSecondContainer img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    background-color: rgba(225, 225,225, 0.5);
+    border-radius: 30px;
+  }
+  #serviceTitle {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  #serviceDetails {
+    font-size: 1em;
+    color: #70757f;
+  }
+  #mySkills {
+    padding: 50px;
+  }
+  #mySkillsH1 {
+    color: #5f09af;
+    font-size: 1.5em;
+    padding: 10px;
+    text-align: center;
+  }
+  #mySkillsSkillsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    border-radius: 15px;
+    background: #131416;
+    box-shadow:  8px 8px 16px #080809,
+                -8px -8px 16px #1e2023;
+    padding: 20px;
+  }
+  progress {
+    border-radius: 10px; 
+    height: 15px;
+    margin: 5px;
+    width: 100%;
+  }
+  progress::-webkit-progress-bar {
+    background-color: #fcf9fe;
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+  }
+  progress::-webkit-progress-value {
+    background-color: #5b0df6;
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+  }
+  progress::-moz-progress-bar {
+    background-color: #9d4dec;
+    border-radius: 10px;
+    width: 100%;
+  }
+  /*My Skills Styling Ends Here */
+
+
+ /* #portfolio {
+    background-color: #1c1d24;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  #portfolioFirstTextContainerFirstH1 {
+    font-size: 3em;
+    cursor:  ;
+    color: #551a8b;
+  }
+  #portfolioFirstTextContainerFirstP {
+    font-size: 1.1em;
+    color: #70757f;
+    margin-bottom: 50px;
+  }
+  #portfolioFilterLink {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    font-size: 1em;
+    color: #70757f;
+    margin-bottom: 20px;
+  }
+  #allbutton {
+    color: #ffffff;
+    border-bottom: solid 1px ;
+  }
+  #portfolioFilterLink p:hover {
+    border-bottom: solid 2px ;
+    cursor:  ;
+  }
+  #portfolioPostContainer {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    justify-content: space-between;
+    
+  }
+  .portfolioPostContainerItem {
+    margin: 20px;
+    padding: 0 10px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: #131416;
+    box-shadow:  8px 8px 16px #080809,
+             -8px -8px 16px #1e2023;
+  }
+  .portfolioPostContainerItem img{
+    width: 300px;
+  }
+  .portfolioPostContainerItem h1{
+    padding: 10px 0 0 0;
+  }
+  .portfolioPostContainerItem p{
+    font-size: 1em;
+    color: #70757f;
+    padding-bottom: 5px;
+  }
+  
+}*/
